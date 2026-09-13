@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><span data-config="developerName"></span> — <span data-config="websiteName"></span></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo" data-config="websiteName"></div>
+    <nav>
+        <a href="index.html">Mods</a>
+        <a href="elias.html">Developers</a>
+    </nav>
+</header>
+
+<main class="profile-page">
+    <div class="breadcrumbs">Developers / <span data-config="developerName"></span></div>
+
+    <section class="profile card">
+        <div class="avatar" data-config="developerName"></div>
+        <div>
+            <h1 data-config="developerName"></h1>
+            <p class="muted">Independent Minecraft developer</p>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Projects</h2>
+        <p><a href="index.html" data-config="modName"></a></p>
+        <p class="muted">Experimental adaptive NPC framework</p>
+    </section>
+
+    <section class="card">
+        <h2>Posts</h2>
+
+        <article class="post">
+            <div class="post-date">October 19, 2023</div>
+            <p>I think I've made a mistake.</p>
+        </article>
+
+        <article class="post">
+            <div class="post-date">October 21, 2023</div>
+            <p>I'm archiving <span data-config="modName"></span> indefinitely. <span data-config="modVersion"></span> should not have been released publicly.</p>
+        </article>
+
+        <article class="post">
+            <div class="post-date">October 22, 2023</div>
+            <p class="redacted">[post unavailable]</p>
+        </article>
+    </section>
+</main>
+
+<footer id="footer"></footer>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

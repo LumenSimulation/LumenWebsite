@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><span data-config="modName"></span> — <span data-config="websiteName"></span></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo" data-config="websiteName"></div>
+    <nav>
+        <a href="index.html">Mods</a>
+        <a href="elias.html">Developers</a>
+    </nav>
+</header>
+
+<main>
+    <div class="breadcrumbs">Mods / <span data-config="modName"></span></div>
+
+    <section class="mod-header">
+        <div class="icon">M</div>
+        <div>
+            <h1 data-config="modName"></h1>
+            <p class="tagline" data-config="modTagline"></p>
+            <p class="muted">by <a href="elias.html" data-config="developerName"></a></p>
+        </div>
+    </section>
+
+    <div class="layout">
+        <section>
+            <div class="card">
+                <h2>About</h2>
+                <p data-config="modDescription"></p>
+                <p>Lumen is designed to test how far persistent behavioral systems can be pushed while remaining inside the normal Minecraft entity framework.</p>
+            </div>
+
+            <div class="card">
+                <h2>Versions</h2>
+                <div class="version">
+                    <strong data-config="modVersion"></strong>
+                    <span class="pill" data-config="minecraftVersion"></span>
+                    <span class="pill" data-config="loader"></span>
+                    <span class="muted" data-config="releaseDate"></span>
+                </div>
+                <p class="small">Latest public release</p>
+                <button id="downloadBtn">Download</button>
+                <p id="downloadStatus" class="small"></p>
+            </div>
+
+            <div class="card">
+                <h2>Known Issues</h2>
+                <ul>
+                    <li>Entities may fail to despawn normally.</li>
+                    <li>NPCs may continue pathfinding after losing their target.</li>
+                    <li>Memory data may persist after entity removal.</li>
+                    <li>NPCs may recognize players from previous sessions.</li>
+                    <li><strong>Do not allow Lumen entities to reach the world border.</strong></li>
+                    <li><strong>Do not delete /lumen/memory/ while the game is running.</strong></li>
+                </ul>
+            </div>
+
+            <div class="card comments">
+                <h2>Comments</h2>
+
+                <div class="comment">
+                    <strong>blockbuilder91</strong>
+                    <span class="muted">3 years ago</span>
+                    <p>Really interesting NPC behavior. The pathfinding is surprisingly good.</p>
+                </div>
+
+                <div class="comment">
+                    <strong>voidwalker92</strong>
+                    <span class="muted">2 years ago</span>
+                    <p>Does it still remember?</p>
+                </div>
+
+                <div class="comment developer-comment">
+                    <strong data-config="developerName"></strong>
+                    <span class="muted">2 years ago</span>
+                    <p>I don't understand what you mean.</p>
+                </div>
+            </div>
+        </section>
+
+        <aside>
+            <div class="card">
+                <h3>Mod Information</h3>
+                <div class="info-row"><span>Game</span><b data-config="minecraftVersion"></b></div>
+                <div class="info-row"><span>Version</span><b data-config="modVersion"></b></div>
+                <div class="info-row"><span>Loader</span><b data-config="loader"></b></div>
+                <div class="info-row"><span>Developer</span><b data-config="developerName"></b></div>
+            </div>
+
+            <div class="card subtle">
+                <h3>Developer</h3>
+                <p><a href="elias.html" data-config="developerName"></a></p>
+                <p class="small">Independent developer</p>
+            </div>
+        </aside>
+    </div>
+</main>
+
+<footer id="footer"></footer>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
