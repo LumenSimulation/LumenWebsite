@@ -20,7 +20,7 @@ const ARG = {
 
     // Optional ARG details
     aiDesignation: "Lumen_Assistant",
-    mysteryNumber: "17",
+    mysteryNumber: "2027",
 
     // Website text
     modTagline: "An experimental adaptive NPC framework.",
