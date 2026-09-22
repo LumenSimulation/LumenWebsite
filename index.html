@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +30,7 @@
 
     <div class="layout">
         <section>
+
             <div class="card">
                 <h2>About</h2>
                 <p data-config="modDescription"></p>
@@ -37,26 +39,28 @@
 
             <div class="card">
                 <h2>Versions</h2>
+
                 <div class="version">
                     <strong data-config="modVersion"></strong>
                     <span class="pill" data-config="minecraftVersion"></span>
                     <span class="pill" data-config="loader"></span>
                     <span class="muted" data-config="releaseDate"></span>
                 </div>
+
                 <p class="small">Latest public release</p>
+
                 <button id="downloadBtn">Download</button>
                 <p id="downloadStatus" class="small"></p>
             </div>
 
             <div class="card">
                 <h2>Known Issues</h2>
+
                 <ul>
-                    <li>Entities may fail to despawn normally.</li>
+                    <li>Entities may occasionally fail to despawn normally.</li>
                     <li>NPCs may continue pathfinding after losing their target.</li>
-                    <li>Memory data may persist after entity removal.</li>
-                    <li>NPCs may recognize players from previous sessions.</li>
-                    <li><strong>Do not allow Lumen entities to reach the world border.</strong></li>
-                    <li><strong>Do not delete /lumen/memory/ while the game is running.</strong></li>
+                    <li>Memory usage may increase during longer sessions.</li>
+                    <li>NPC behavior may become unpredictable in heavily populated areas.</li>
                 </ul>
             </div>
 
@@ -72,24 +76,42 @@
                 <div class="comment">
                     <strong>voidwalker92</strong>
                     <span class="muted">2 years ago</span>
-                    <p>Does it still remember?</p>
+                    <p>The NPCs seem to adapt pretty quickly. Nice work.</p>
                 </div>
 
                 <div class="comment developer-comment">
                     <strong data-config="developerName"></strong>
                     <span class="muted">2 years ago</span>
-                    <p>I don't understand what you mean.</p>
+                    <p>Thanks! There's still a lot of work to do, but I'm happy with how it's coming along.</p>
                 </div>
             </div>
+
         </section>
 
         <aside>
+
             <div class="card">
                 <h3>Mod Information</h3>
-                <div class="info-row"><span>Game</span><b data-config="minecraftVersion"></b></div>
-                <div class="info-row"><span>Version</span><b data-config="modVersion"></b></div>
-                <div class="info-row"><span>Loader</span><b data-config="loader"></b></div>
-                <div class="info-row"><span>Developer</span><b data-config="developerName"></b></div>
+
+                <div class="info-row">
+                    <span>Game</span>
+                    <b data-config="minecraftVersion"></b>
+                </div>
+
+                <div class="info-row">
+                    <span>Version</span>
+                    <b data-config="modVersion"></b>
+                </div>
+
+                <div class="info-row">
+                    <span>Loader</span>
+                    <b data-config="loader"></b>
+                </div>
+
+                <div class="info-row">
+                    <span>Developer</span>
+                    <b data-config="developerName"></b>
+                </div>
             </div>
 
             <div class="card subtle">
@@ -97,13 +119,6 @@
                 <p><a href="elias.html" data-config="developerName"></a></p>
                 <p class="small">Independent developer</p>
             </div>
-        </aside>
-    </div>
-</main>
 
-<footer id="footer"></footer>
-
-<script src="config.js"></script>
-<script src="script.js"></script>
-</body>
-</html>
+        </
+```
