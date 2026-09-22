@@ -1,5 +1,5 @@
 // ============================================================
-// MORROW ARG - EASY SETTINGS
+// LUMEN ARG - EASY SETTINGS
 // Change the values below to customize the entire website.
 // You normally only need to edit THIS FILE.
 // ============================================================
